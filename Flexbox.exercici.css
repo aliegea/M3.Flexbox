@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;  
+  }
+body{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.header{
+    display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   border:1em solid black;
+   margin-bottom: 1em;
+}
+.headerWrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border:1em solid darkblue;
+    background-color: darkblue;
+}
+
+.logo{
+    padding:10px;
+    background-color: red;
+    flex-grow: 1;
+}
+.nav{
+    padding:10px;
+    background-color: red;
+    margin: 0 1em;
+    flex-grow: 3;
+   
+}
+.iconos{
+    padding:10px;
+    background-color: red;
+    flex-grow: 1;
+}
+.naranja{
+   
+    display:flex;
+    border:1em solid orange;
+    
+}
+.imagen{
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+}
+.section{
+    display: flex;
+    flex-direction: row wrap;
+   
+    justify-content: space-between;
+   margin-bottom: 1em;
+}
+.izquierdo{
+    
+    background-color: purple;
+    border:1em solid black;
+    padding: 10px;
+  
+    /* flex-grow: 2; */
+    width: 66.6%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    
+    
+
+   
+}
+.derecho{
+    
+    background-color: red;
+    border: 1em solid black;
+   border-left: 0;
+   padding:10px;
+   
+  width: 33.4%;
+    /* flex-grow: 1; */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  
+   justify-content:flex-start
+   
+    
+}
+.celeste{
+   
+    background-color: skyblue;
+    padding:10px;
+    margin:10px ;
+  
+    min-width: 47%; 
+     
+}
+.darkblue{
+    width: 100%;
+    padding:10px;
+    margin:10px ;
+    background-color:  slateblue;
+}
+
+
+
+.amarillo1 {
+    background-color: yellow;
+    padding:10px;
+    margin:10px ;
+    min-width: 95%;
+}
+.amarillo2 {
+    background-color: yellow;
+    padding:10px;
+    margin:10px ;
+    min-width: 95%;
+}
+.footer{
+    display:flex;
+    border:1em solid black;
+    
+}
+.marron{
+    background-color: burlywood;
+    width: 100%;
+    height: 100%;
+    padding:10px;
+}
+@media (max-width: 1200px) {
+   
+    .section {
+        flex-flow: column wrap;
+        justify-content: space-around;
+       
+    }
+    .derecho{
+        border: 1em solid yellow;
+      
+        border-top: 0;
+        justify-content:space-between;
+        width: 100%;
+       
+    }
+    .izquierdo{
+        border: 1em solid yellow;
+        justify-content: space-around;
+      flex-grow: 1;
+      width: 100%;
+       
+    }
+    .celeste{
+        min-width: 46.5%; 
+    }
+    .amarillo1 {
+       
+        margin-bottom:0px ;
+        
+    }
+    
+   
+    }
+    @media (max-width: 640px) {
+        .celeste{
+           min-width: 45%; 
+    }
+}
+@media (max-width: 470px) {
+    .celeste{
+       min-width: 40%; 
+}
+}
